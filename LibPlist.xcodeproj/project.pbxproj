@@ -14,8 +14,12 @@
 		FF8D4B58161E087600545DF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B57161E087600545DF1 /* UIKit.framework */; };
 		FF8D4B59161E087600545DF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B46161E087600545DF1 /* Foundation.framework */; };
 		FF8D4B5C161E087600545DF1 /* libLibPlist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B43161E087600545DF1 /* libLibPlist.a */; };
-		FF8D4B62161E087600545DF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF8D4B60161E087600545DF1 /* InfoPlist.strings */; };
-		FF8D4B65161E087600545DF1 /* LibPlistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF8D4B64161E087600545DF1 /* LibPlistTests.m */; };
+		FFDAA5C0161E172C00D9C4B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B57161E087600545DF1 /* UIKit.framework */; };
+		FFDAA5C1161E172C00D9C4B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B46161E087600545DF1 /* Foundation.framework */; };
+		FFDAA5C3161E172C00D9C4B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDAA5C2161E172C00D9C4B0 /* CoreGraphics.framework */; };
+		FFDAA5E2161E172C00D9C4B0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B55161E087600545DF1 /* SenTestingKit.framework */; };
+		FFDAA5E3161E172C00D9C4B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B57161E087600545DF1 /* UIKit.framework */; };
+		FFDAA5E4161E172C00D9C4B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF8D4B46161E087600545DF1 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = FF8D4B42161E087600545DF1;
 			remoteInfo = LibPlist;
+		};
+		FFDAA5E5161E172C00D9C4B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF8D4B3A161E087600545DF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFDAA5BD161E172C00D9C4B0;
+			remoteInfo = ProvaAggiuntaLibreria;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -50,10 +61,9 @@
 		FF8D4B54161E087600545DF1 /* LibPlistTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibPlistTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF8D4B55161E087600545DF1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		FF8D4B57161E087600545DF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		FF8D4B5F161E087600545DF1 /* LibPlistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LibPlistTests-Info.plist"; sourceTree = "<group>"; };
-		FF8D4B61161E087600545DF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FF8D4B63161E087600545DF1 /* LibPlistTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibPlistTests.h; sourceTree = "<group>"; };
-		FF8D4B64161E087600545DF1 /* LibPlistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LibPlistTests.m; sourceTree = "<group>"; };
+		FFDAA5BE161E172C00D9C4B0 /* ProvaAggiuntaLibreria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvaAggiuntaLibreria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDAA5C2161E172C00D9C4B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFDAA5E1161E172C00D9C4B0 /* ProvaAggiuntaLibreriaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProvaAggiuntaLibreriaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFDAA5BB161E172C00D9C4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDAA5C0161E172C00D9C4B0 /* UIKit.framework in Frameworks */,
+				FFDAA5C1161E172C00D9C4B0 /* Foundation.framework in Frameworks */,
+				FFDAA5C3161E172C00D9C4B0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDAA5DD161E172C00D9C4B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDAA5E2161E172C00D9C4B0 /* SenTestingKit.framework in Frameworks */,
+				FFDAA5E3161E172C00D9C4B0 /* UIKit.framework in Frameworks */,
+				FFDAA5E4161E172C00D9C4B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				FF8D4B48161E087600545DF1 /* LibPlist */,
-				FF8D4B5D161E087600545DF1 /* LibPlistTests */,
 				FF8D4B45161E087600545DF1 /* Frameworks */,
 				FF8D4B44161E087600545DF1 /* Products */,
 			);
@@ -94,6 +123,8 @@
 			children = (
 				FF8D4B43161E087600545DF1 /* libLibPlist.a */,
 				FF8D4B54161E087600545DF1 /* LibPlistTests.octest */,
+				FFDAA5BE161E172C00D9C4B0 /* ProvaAggiuntaLibreria.app */,
+				FFDAA5E1161E172C00D9C4B0 /* ProvaAggiuntaLibreriaTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +135,7 @@
 				FF8D4B46161E087600545DF1 /* Foundation.framework */,
 				FF8D4B55161E087600545DF1 /* SenTestingKit.framework */,
 				FF8D4B57161E087600545DF1 /* UIKit.framework */,
+				FFDAA5C2161E172C00D9C4B0 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,25 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				FF8D4B4A161E087600545DF1 /* LibPlist-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FF8D4B5D161E087600545DF1 /* LibPlistTests */ = {
-			isa = PBXGroup;
-			children = (
-				FF8D4B63161E087600545DF1 /* LibPlistTests.h */,
-				FF8D4B64161E087600545DF1 /* LibPlistTests.m */,
-				FF8D4B5E161E087600545DF1 /* Supporting Files */,
-			);
-			path = LibPlistTests;
-			sourceTree = "<group>";
-		};
-		FF8D4B5E161E087600545DF1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FF8D4B5F161E087600545DF1 /* LibPlistTests-Info.plist */,
-				FF8D4B60161E087600545DF1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,6 +197,42 @@
 			productReference = FF8D4B54161E087600545DF1 /* LibPlistTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		FFDAA5BD161E172C00D9C4B0 /* ProvaAggiuntaLibreria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDAA5F0161E172C00D9C4B0 /* Build configuration list for PBXNativeTarget "ProvaAggiuntaLibreria" */;
+			buildPhases = (
+				FFDAA5BA161E172C00D9C4B0 /* Sources */,
+				FFDAA5BB161E172C00D9C4B0 /* Frameworks */,
+				FFDAA5BC161E172C00D9C4B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProvaAggiuntaLibreria;
+			productName = ProvaAggiuntaLibreria;
+			productReference = FFDAA5BE161E172C00D9C4B0 /* ProvaAggiuntaLibreria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFDAA5E0161E172C00D9C4B0 /* ProvaAggiuntaLibreriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFDAA5F3161E172C00D9C4B0 /* Build configuration list for PBXNativeTarget "ProvaAggiuntaLibreriaTests" */;
+			buildPhases = (
+				FFDAA5DC161E172C00D9C4B0 /* Sources */,
+				FFDAA5DD161E172C00D9C4B0 /* Frameworks */,
+				FFDAA5DE161E172C00D9C4B0 /* Resources */,
+				FFDAA5DF161E172C00D9C4B0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFDAA5E6161E172C00D9C4B0 /* PBXTargetDependency */,
+			);
+			name = ProvaAggiuntaLibreriaTests;
+			productName = ProvaAggiuntaLibreriaTests;
+			productReference = FFDAA5E1161E172C00D9C4B0 /* ProvaAggiuntaLibreriaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +256,8 @@
 			targets = (
 				FF8D4B42161E087600545DF1 /* LibPlist */,
 				FF8D4B53161E087600545DF1 /* LibPlistTests */,
+				FFDAA5BD161E172C00D9C4B0 /* ProvaAggiuntaLibreria */,
+				FFDAA5E0161E172C00D9C4B0 /* ProvaAggiuntaLibreriaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,7 +267,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8D4B62161E087600545DF1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDAA5BC161E172C00D9C4B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDAA5DE161E172C00D9C4B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +288,19 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		FF8D4B52161E087600545DF1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		FFDAA5DF161E172C00D9C4B0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -251,7 +328,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8D4B65161E087600545DF1 /* LibPlistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDAA5BA161E172C00D9C4B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDAA5DC161E172C00D9C4B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,18 +353,12 @@
 			target = FF8D4B42161E087600545DF1 /* LibPlist */;
 			targetProxy = FF8D4B5A161E087600545DF1 /* PBXContainerItemProxy */;
 		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FF8D4B60161E087600545DF1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF8D4B61161E087600545DF1 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
+		FFDAA5E6161E172C00D9C4B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFDAA5BD161E172C00D9C4B0 /* ProvaAggiuntaLibreria */;
+			targetProxy = FFDAA5E5161E172C00D9C4B0 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FF8D4B66161E087600545DF1 /* Debug */ = {
@@ -378,6 +462,73 @@
 			};
 			name = Release;
 		};
+		FFDAA5F1161E172C00D9C4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProvaAggiuntaLibreria/ProvaAggiuntaLibreria-Prefix.pch";
+				INFOPLIST_FILE = "ProvaAggiuntaLibreria/ProvaAggiuntaLibreria-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFDAA5F2161E172C00D9C4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProvaAggiuntaLibreria/ProvaAggiuntaLibreria-Prefix.pch";
+				INFOPLIST_FILE = "ProvaAggiuntaLibreria/ProvaAggiuntaLibreria-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FFDAA5F4161E172C00D9C4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProvaAggiuntaLibreria.app/ProvaAggiuntaLibreria";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProvaAggiuntaLibreria/ProvaAggiuntaLibreria-Prefix.pch";
+				INFOPLIST_FILE = "ProvaAggiuntaLibreriaTests/ProvaAggiuntaLibreriaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FFDAA5F5161E172C00D9C4B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ProvaAggiuntaLibreria.app/ProvaAggiuntaLibreria";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ProvaAggiuntaLibreria/ProvaAggiuntaLibreria-Prefix.pch";
+				INFOPLIST_FILE = "ProvaAggiuntaLibreriaTests/ProvaAggiuntaLibreriaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -397,12 +548,30 @@
 				FF8D4B6A161E087600545DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF8D4B6B161E087600545DF1 /* Build configuration list for PBXNativeTarget "LibPlistTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF8D4B6C161E087600545DF1 /* Debug */,
 				FF8D4B6D161E087600545DF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFDAA5F0161E172C00D9C4B0 /* Build configuration list for PBXNativeTarget "ProvaAggiuntaLibreria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDAA5F1161E172C00D9C4B0 /* Debug */,
+				FFDAA5F2161E172C00D9C4B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFDAA5F3161E172C00D9C4B0 /* Build configuration list for PBXNativeTarget "ProvaAggiuntaLibreriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFDAA5F4161E172C00D9C4B0 /* Debug */,
+				FFDAA5F5161E172C00D9C4B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
