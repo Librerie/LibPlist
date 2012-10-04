@@ -17,5 +17,6 @@
 + (void)writeDictionary:(NSDictionary *)dictionary fromPlistName:(NSString *)plistName;
 + (NSDictionary *)readPlistName:(NSString *)plistName;
 
++ (NSDictionary *)createDictionaryWithObject:(NSObject *)obj andKey:(NSString *)key;
 
 @end

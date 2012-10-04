@@ -71,6 +71,14 @@
     return savedStock;
 }
 
+#pragma  mark - Metodi di comodo
+
++ (NSDictionary *)createDictionaryWithObject:(NSObject *)obj andKey:(NSString *)key {
+    
+    NSDictionary *dic = [[NSDictionary alloc] initWithObjectsAndKeys:obj, key, nil];
+    return dic;
+}
+
 /*
 - (NSArray *)listaArticoli {
     static NSString *namePlist = @"articoli";
