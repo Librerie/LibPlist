@@ -10,4 +10,85 @@
 
 @implementation LibPlist
 
+//--- lista articoli in ordine alfabetico
+//--- legge dictionary
+//--- crea lista articoli
+
++ (NSArray *)arrayFromPlistName:(NSString *)plistName {
+    
+    NSDictionary *dictionary = [LibPlist dictionaryWithString:plistName];
+    NSArray *listaOggetti = [LibPlist arrayFromDictionary:dictionary];
+    listaOggetti = [listaOggetti sortedArrayUsingSelector:@selector(compare:)];
+    
+    return listaOggetti;
+}
+
++ (NSArray *)arrayFromDictionary:(NSDictionary *)dictionary {
+    
+    NSMutableArray *listaTemp = [[NSMutableArray alloc] init];
+    for (id key in dictionary) {
+        
+        id value = [dictionary objectForKey:key];
+        
+        for (id riga in value) {
+            
+            id stringa = (NSString *)riga;
+            //NSLog(@"Stringa = '%@'", stringa);
+            [listaTemp addObject:stringa];
+        }
+    }
+    return [[NSArray alloc] initWithArray:listaTemp];
+}
+
++ (NSDictionary *)dictionaryWithString:(NSString *)name {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"plist"];
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    return dictionary;
+}
+
++ (NSDictionary *)getDictionaryArticoliFromPlistName:(NSString *)plistName {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    NSDictionary *dictionary = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    return dictionary;
+    
+}
+
++ (void)writeDictionary:(NSDictionary *)dictionary fromPlistName:(NSString *)plistName {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    [dictionary writeToFile:path atomically:YES];
+}
+
++ (NSDictionary *)readPlistName:(NSString *)plistName {
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"];
+    NSMutableDictionary *savedStock = [[NSMutableDictionary alloc] initWithContentsOfFile:path];
+    
+    return savedStock;
+}
+
+/*
+- (NSArray *)listaArticoli {
+    static NSString *namePlist = @"articoli";
+    
+    //--- legge dictionary
+    NSDictionary *dictionary = [self dictionaryWithString:namePlist];
+    
+    //--- crea lista articoli
+    NSArray *listaArticoli = [self articoliFromDictionary:dictionary];
+    
+    //--- ordina in modo alfabetico
+    listaArticoli = [listaArticoli sortedArrayUsingSelector:@selector(compare:)];
+    
+    return listaArticoli;
+    
+}
+*/
+
+
+
 @end

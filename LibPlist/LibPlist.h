@@ -10,4 +10,12 @@
 
 @interface LibPlist : NSObject
 
++ (NSArray *)arrayFromPlistName:(NSString *)plistName;
++ (NSArray *)arrayFromDictionary:(NSDictionary *)dictionary;
++ (NSDictionary *)dictionaryWithString:(NSString *)name;
++ (NSDictionary *)getDictionaryArticoliFromPlistName:(NSString *)plistName;
++ (void)writeDictionary:(NSDictionary *)dictionary fromPlistName:(NSString *)plistName;
++ (NSDictionary *)readPlistName:(NSString *)plistName;
+
+
 @end
